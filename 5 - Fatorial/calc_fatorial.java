@@ -1,7 +1,5 @@
 import java.util.Scanner;
 
-import javax.swing.text.Style;
-
 public class calc_fatorial{
 
     public static void main(String[] args) {
