@@ -20,8 +20,8 @@ Para utilizar o software, é necessário ter Python instalado na sua máquina
 Link para instalar Python: https://www.python.org/ftp/python/3.11.4/python-3.11.4-amd64.exe
 
 
-Com o Python instalado, faça do download da pasta, descompacte-a, e execute o seguinte comando no prompt de comando:
+Com o Python instalado, faça o download e execute o seguinte arquivo:
 
 ```bash
-  python verdade.py
+  verdade.py
 ```
