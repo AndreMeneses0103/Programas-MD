@@ -18,4 +18,4 @@ O software, construido em Javascript, realiza a união e intersecção dos dois 
 
 Para utilizar o software, basta acessar o seguinte link:
 
-https://andremeneses0103.github.io/partes_conjunto/
+https://andremeneses0103.github.io/uniao_interseccao/
