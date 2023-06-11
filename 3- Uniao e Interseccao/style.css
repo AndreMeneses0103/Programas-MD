@@ -4,7 +4,7 @@ body{
 }
 header{
     margin: 0;
-    background-color: darkseagreen;
+    background-color: rgb(68, 106, 212);
     text-align: center;
     padding: 10px;
     border: 1px solid;
@@ -12,9 +12,20 @@ header{
     font-size: 70px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
+.tudo{
+    position: absolute;
+    width: 100%;
+    top: 25%;
+}
 .developer{
     font-size: 20px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
 }
 
 .todos_conjuntos {
@@ -31,12 +42,19 @@ header{
 }
 
 .texto_conj, .texto_part{
-    margin: 20px;
+    text-align: center;
+    margin: 10px 0px;
     font-size: 20px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-#input_conj{
+.texto_uni, .texto_inter{
+    margin: 30px 0px;
+    font-size: 25px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#input_conj1, #input_conj2{
     width: 5%;
     height: 40px;
     text-align: center;
@@ -44,7 +62,7 @@ header{
 }
 
 
-#input_part{
+#input_part1, #input_part2{
     width: 40%;
     height: 40px;
     text-align: center;
@@ -59,6 +77,7 @@ header{
 #btn_res{
     display: block;
     margin: auto;
+    margin-top: 50px;
     border-radius: 10px;
     border: transparent;
     background-color: darkcyan;
@@ -71,17 +90,34 @@ header{
     transition: 0.3s;
 }
 
-#res_conjunto, #res_card, #res_partes{
-    font-size: 40px;
+#res_uni, #res_inter{
+    font-size: 25px;
 }
 
-#res_partes{
-    font-size: 30px;
+
+.intersec{
+    margin: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.uniao{
+    margin: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.resul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #return{
     display: block;
-    margin: auto;
+    margin: 50px 0px;
     border-radius: 10px;
     border: transparent;
     background-color: darkcyan;

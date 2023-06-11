@@ -9,7 +9,6 @@ function saveConj() {
 	elementos2 = elementos2.replaceAll(";", ",");
 	var all_elem2 = elementos2.split(",");
 
-	var uniao = []
 	var interseccao = []
 
 	for(var x = 0; x < all_elem1.length; x++){
@@ -20,18 +19,22 @@ function saveConj() {
 		}
 	}
 
-    alert("Interseccao = " + interseccao)
-	// document.getElementById("calculos").style.display = "none";
-	// document.getElementById("resul").style.display = "block";
+	var uniao = all_elem1.concat(all_elem2);
 
-	// document.getElementById("res_conjunto").innerHTML = conjunto;
-	// document.getElementById("res_card").innerHTML =
-	// 	"#" + nome_conjunto + " = " + num_partes;
-	// document.getElementById("res_partes").innerHTML =
-	// 	"P(" + nome_conjunto + ") = " + lps;
+	document.getElementById("res_uni").innerHTML = nome_conjunto1 + "∪" + nome_conjunto2 + " = {" + uniao + "}"
+	document.getElementById("res_inter").innerHTML = nome_conjunto1 + "∩" + nome_conjunto2 + " = {" + interseccao + "}"
+
+	document.getElementById("btn_res").style.display = "none"
+	document.getElementById("todos_conjuntos").style.display = "none";
+	document.getElementById("resul").style.display = "flex";
 }
 
 function voltar() {
-	document.getElementById("calculos").style.display = "block";
+	document.getElementById("input_conj1").value = ""
+	document.getElementById("input_conj2").value = ""
+	document.getElementById("input_part1").value = ""
+	document.getElementById("input_part2").value = ""
+	document.getElementById("btn_res").style.display = "flex"
+	document.getElementById("todos_conjuntos").style.display = "flex";
 	document.getElementById("resul").style.display = "none";
 }

@@ -9,53 +9,54 @@
     <title>União e Intersecção</title>
 </head>
 <body>
-    <header>UNIÃO E INTERSECÇÃO</header>
-    <div class="tudo">
-        <div class="todos_conjuntos">
-                <div class="calculos1" id="calculos1" style="display: block;">
-                    <div class="conjunto1">
-                        <span class="texto_conj">Digite a letra do primeiro conjunto</span>
-                        <input type="text" name="input_conj1" id="input_conj1" maxlength="1">
+        <header>UNIÃO E INTERSECÇÃO</header>
+        <div class="tudo">
+            <!-- Mudanca do display para alterar o que esta na tela -->
+            <div class="todos_conjuntos" id="todos_conjuntos" style="display: flex;">
+                    <div class="calculos1" id="calculos1">
+                        <div class="conjunto1">
+                            <span class="texto_conj">Digite a letra do primeiro conjunto</span>
+                            <input type="text" name="input_conj1" id="input_conj1" maxlength="1">
+                        </div>
+                    
+                        <div class="partes1">
+                            <span class="texto_part">Digite os elementos do primeiro conjunto (use , ou ; para separar)</span>
+                            <input type="text" name="input_part1" id="input_part1">
+                        </div>
+                    </div>
+                <div class="calculos2" id="calculos2">
+                    <div class="conjunto2">
+                        <span class="texto_conj">Digite a letra do segundo conjunto</span>
+                        <input type="text" name="input_conj2" id="input_conj2" maxlength="1">
                     </div>
                 
-                    <div class="partes1">
-                        <span class="texto_part">Digite os elementos do primeiro conjunto (use , ou ; para separar)</span>
-                        <input type="text" name="input_part1" id="input_part1">
+                    <div class="partes2">
+                        <span class="texto_part">Digite os elementos do segundo conjunto (use , ou ; para separar)</span>
+                        <input type="text" name="input_part2" id="input_part2">
                     </div>
                 </div>
-            <div class="calculos2" id="calculos2" style="display: block;">
-                <div class="conjunto2">
-                    <span class="texto_conj">Digite a letra do segundo conjunto</span>
-                    <input type="text" name="input_conj2" id="input_conj2" maxlength="1">
+            </div>
+
+            <button type="button" id="btn_res" onclick="saveConj()" style="display: flex;">Resultados</button>
+
+
+            <div class="resul" id="resul" style="display: none;">
+
+                <div class="uniao">
+                    <span class="texto_uni">União</span>
+                    <span id="res_uni"></span>
                 </div>
             
-                <div class="partes2">
-                    <span class="texto_part">Digite os elementos do segundo conjunto (use , ou ; para separar)</span>
-                    <input type="text" name="input_part2" id="input_part2">
+                <div class="intersec">
+                    <span class="texto_inter">Intersecção</span>
+                    <span id="res_inter"></span>
                 </div>
+                <button id="return" onclick="voltar()">Voltar</button>
             </div>
+
+
         </div>
 
-        <button type="button" id="btn_res" onclick="saveConj()">Resultados</button>
-
-        <div class="resul" id="resul" style="display: none;">
-
-            <div class="conjunto">
-                <span class="texto_conj">Conjunto</span>
-                <span id="res_conjunto">TESTE</span>
-            </div>
-        
-            <div class="partes">
-                <span class="texto_part">Cardinalidade</span>
-                <span id="res_card">TESTE2</span>
-            </div>
-
-            <div class="partes">
-                <span class="texto_part">Conjunto das Partes</span>
-                <span id="res_partes">TESTE3</span>
-            </div>
-            <button id="return" onclick="voltar()">Voltar</button>
-        </div>
-        <div class="developer">Desenvolvido por André Meneses // FATEC SJC - Banco de Dados // 1 Semestre // 2023</div>
-</body>
+    <div class="developer">Desenvolvido por André Meneses // FATEC SJC - Banco de Dados // 1 Semestre // 2023</div>
+    </body>
 </html>
