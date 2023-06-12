@@ -24,3 +24,5 @@ Com o JDK instalado, faça o download dos arquivos e execute o seguinte comando 
 ```bash
   java calc_fatorial.java
 ```
+
+Tutorial exemplificado para utilizar o software: https://pt.wikihow.com/Compilar-e-Executar-um-Programa-Java-Usando-o-Prompt-de-Comando
