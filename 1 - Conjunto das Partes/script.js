@@ -6,8 +6,6 @@ function saveConj() {
 
   var conjunto = nome_conjunto + " = {" + all_elem + "}";
   var num_partes = 2 ** all_elem.length;
-  alert("CONJUNTO: " + conjunto);
-  alert("#" + nome_conjunto + " = " + num_partes);
 
   function conjuntoDasPartes(conjunto) {
     // Se o conjunto estiver vazio, retorne um array com um conjunto vazio
@@ -25,7 +23,6 @@ function saveConj() {
       primeiro,
       ...subConjunto,
     ]);
-    // console.log(novosConjuntos)
 
     // Retorne o conjunto das partes, combinando o subconjunto original com os novos conjuntos
     return [...novosConjuntos, ...subConjuntos];
@@ -35,7 +32,6 @@ function saveConj() {
   partes.sort(function (a, b) {
     return a.length - b.length;
   });
-  console.log(partes);
   reps = partes.length;
   partes[0] = "Ø";
   partes[reps - 1] = nome_conjunto;
@@ -45,8 +41,6 @@ function saveConj() {
   lps = lps.replaceAll("]", "}");
   lps = lps.replaceAll('"', "");
 
-  console.log(lps);
-  alert(lps);
   
   document.getElementById('calculos').style.display = "none"
   document.getElementById('resul').style.display="block"
@@ -58,7 +52,9 @@ function saveConj() {
 
 }
 
-function voltar(){
+function voltar() {
+  document.getElementById("input_conj").innerHTML = "";
+  document.getElementById("input_part").innerHTML = "";
   document.getElementById('calculos').style.display = "block"
   document.getElementById('resul').style.display="none"
 }
