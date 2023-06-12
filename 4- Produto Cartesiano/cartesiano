@@ -1,3 +1,5 @@
+print("Desenvolvido por André Meneses // FATEC SJC - Banco de Dados // 1 Semestre // 2023\n")
+
 letra_conjunto1 = input("Digite a letra do primeiro conjunto: \n")
 letra_conjunto2 = input("Digite a letra do segundo conjunto: \n")
 
