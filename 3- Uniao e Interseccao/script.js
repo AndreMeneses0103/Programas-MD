@@ -19,7 +19,7 @@ function saveConj() {
 		}
 	}
 
-	var uniao = all_elem1.concat(all_elem2);
+	var uniao = [...new Set(all_elem1.concat(all_elem2))];
 
 	document.getElementById("res_uni").innerHTML = nome_conjunto1 + "∪" + nome_conjunto2 + " = {" + uniao + "}"
 	document.getElementById("res_inter").innerHTML = nome_conjunto1 + "∩" + nome_conjunto2 + " = {" + interseccao + "}"
